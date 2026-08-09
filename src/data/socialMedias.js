@@ -1,4 +1,4 @@
-import linkedin from "../assets/SocialMedia/LinkedIn.png";
+import linkedin from "../assets/SocialMedia/Linkedin.png";
 import facebook from "../assets/SocialMedia/Facebook.png";
 import instagram from "../assets/SocialMedia/Instagram.png";
 import twitter from "../assets/SocialMedia/Twitter.png";
