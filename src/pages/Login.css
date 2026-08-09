@@ -1,0 +1,58 @@
+.forgot-password {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  width: 100%;
+  padding: 0 20px;
+}
+
+.forgot-password button {
+  background: none;
+  border: none;
+  padding: 0;
+
+  cursor: pointer;
+
+  font-family: "DM Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 140%;
+  letter-spacing: 0.2px;
+
+  color: #6c757d;
+}
+
+.button-Container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  padding: 0 20px;
+}
+
+.divider {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin: 24px 0;
+}
+
+.divider::before,
+.divider::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: #e5e7eb;
+}
+
+.divider span {
+  padding: 0 16px;
+  color: #6c7278;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 14px;
+  line-height: 140%;
+  letter-spacing: 0.2px;
+  text-align: center;
+}

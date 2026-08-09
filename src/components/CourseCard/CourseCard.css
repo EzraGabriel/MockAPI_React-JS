@@ -1,0 +1,163 @@
+.course-card {
+  background-color: rgba(255, 255, 255, 1);
+  border-radius: 8px;
+  border-color: rgba(241, 241, 241, 1);
+  border-style: solid;
+  border-width: 1px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 16px;
+  max-width: 384px;
+  min-width: 320px;
+}
+
+.courseHeader {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+}
+
+.courseTitleMentor {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 344px;
+}
+
+.courseTitleMentor h3 {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 120%;
+  color: rgba(34, 35, 37, 1);
+  font-style: semi-bold;
+}
+
+.course-description {
+  display: none;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 140%;
+  letter-spacing: 0.2px;
+  height: 48px;
+  color: rgba(108, 117, 125, 1);
+}
+
+.course-image {
+  width: 100%;
+  max-width: 82px;
+  height: 82px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.courseMentor {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.courseMentor img {
+  width: 100%;
+  max-width: 36px;
+  height: 36px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.mentorInfo {
+  display: flex;
+  flex-direction: column;
+  font-family: "DM Sans", sans-serif;
+}
+
+.company {
+  display: none;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.courseMentor h4 {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 140%;
+  color: rgba(34, 35, 37, 1);
+}
+
+.courseMentor p {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 120%;
+  color: rgba(108, 117, 125, 1);
+}
+
+.course-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  justify-content: center;
+  text-align: center;
+}
+
+.rating span {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 120%;
+  color: rgba(108, 117, 125, 1);
+  text-decoration: underline;
+}
+
+.price {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 120%;
+  color: rgba(62, 207, 76, 1);
+  text-align: right;
+}
+
+@media (min-width: 769px) {
+  .courseHeader {
+    flex-direction: column;
+  }
+
+  .courseTitleMentor h3 {
+    font-size: 18px;
+  }
+
+  .course-description {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+  }
+
+  .course-image {
+    height: 193px;
+    max-width: 344px;
+  }
+
+  .company {
+    display: inline;
+  }
+
+  .price {
+    font-size: 24px;
+  }
+
+  .rating span {
+    font-size: 14px;
+  }
+}

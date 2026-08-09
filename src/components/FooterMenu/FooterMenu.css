@@ -1,0 +1,143 @@
+.footer-menu {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.footer-column {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 150px;
+}
+
+.footer-menu-mobile {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 100%;
+
+  padding: 16px 0;
+
+  background: transparent;
+  border: none;
+
+  cursor: pointer;
+}
+
+.footer-menu-mobile span {
+  font-family: "DM Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 140%;
+  letter-spacing: 0.2px;
+  color: #222325;
+}
+
+.footer-menu-mobile img {
+  width: 20px;
+  height: 20px;
+  transition: transform 0.3s ease;
+}
+
+.rotate {
+  transform: rotate(90deg);
+}
+
+.footer-menu-desktop {
+  display: none;
+}
+
+.footer-submenu {
+  list-style: none;
+  padding: 12px 0 16px 16px;
+  margin: 0;
+
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.footer-submenu li {
+  color: #666;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.footer-submenu a {
+  font-family: "DM Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 140%;
+
+  color: #666666;
+
+  text-decoration: none;
+}
+
+@media (min-width: 769px) {
+  .footer-menu {
+    display: grid;
+    grid-template-columns: repeat(3, 150px);
+    justify-content: end;
+    gap: 48px;
+
+    width: 100%;
+  }
+
+  .footer-menu-mobile {
+    display: none;
+  }
+
+  .footer-menu-desktop {
+    display: block;
+  }
+
+  .footer-menu-desktop h4 {
+    margin-bottom: 16px;
+
+    font-family: "DM Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 140%;
+    letter-spacing: 0.2px;
+    color: #222325;
+  }
+
+  .footer-menu-desktop ul {
+    list-style: none;
+
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .footer-menu-desktop li {
+    font-family: "DM Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #666666;
+
+    cursor: pointer;
+  }
+
+  .footer-menu-desktop li:hover {
+    color: #f64920;
+  }
+
+  .footer-menu-desktop a {
+    font-family: "DM Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 140%;
+
+    color: #666666;
+
+    text-decoration: none;
+  }
+
+  .footer-menu-desktop a:hover {
+    color: #222325;
+  }
+}

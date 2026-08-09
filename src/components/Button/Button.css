@@ -1,0 +1,64 @@
+.button {
+  border: none;
+  border-radius: 10px;
+  padding: 7px 0;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 14px;
+  line-height: 140%;
+  letter-spacing: 0.2px;
+  width: 100%;
+}
+
+.button-primary {
+  background-color: rgba(62, 207, 76, 1);
+  color: #fff;
+}
+
+.button-secondary {
+  background-color: rgba(226, 252, 217, 0.8);
+  color: rgba(62, 207, 76, 1);
+}
+
+.button-Google {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background-color: #fff;
+  border: rgba(241, 241, 241, 1) 1px solid;
+  padding: 7px 22px;
+  color: rgba(74, 80, 92, 1);
+}
+
+.button-newsletter {
+  background-color: rgba(255, 189, 58, 1);
+  color: rgba(255, 255, 255, 1);
+  height: 40px;
+}
+
+.button-hero {
+  font-size: 14px;
+  background-color: rgba(62, 207, 76, 1);
+  color: #fff;
+}
+
+.medium {
+  font-weight: 400;
+}
+
+@media (min-width: 769px) {
+  .button-hero {
+    font-size: 16px;
+  }
+
+  .button-newsletter {
+    position: absolute;
+    left: 64.5%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    height: 42px;
+    width: 133px;
+  }
+}

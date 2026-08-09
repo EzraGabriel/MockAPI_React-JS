@@ -1,0 +1,72 @@
+.course-tabs {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.course-tabs::-webkit-scrollbar {
+  display: none;
+}
+
+.course-tab {
+  position: relative;
+
+  border: none;
+  background: transparent;
+
+  padding: 8px 0;
+
+  font-family: "DM Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 140%;
+
+  color: #666666;
+
+  cursor: pointer;
+
+  transition: color 0.2s ease;
+}
+.course-tab:hover {
+  color: #f64920;
+}
+
+.course-tab.active {
+  color: #f64920;
+  font-weight: 700;
+}
+
+.course-tab.active::after {
+  content: "";
+
+  position: absolute;
+
+  left: 0;
+  right: 0;
+  bottom: 3px;
+
+  height: 4px;
+
+  background: #f64920;
+
+  width: 75%;
+
+  border-radius: 999px;
+}
+
+@media (max-width: 768px) {
+  .course-tabs {
+    gap: 24px;
+  }
+
+  .course-tab {
+    font-size: 14px;
+  }
+}
