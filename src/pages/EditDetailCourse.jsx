@@ -45,7 +45,7 @@ function EditDetailCourse() {
     try {
       await updateCourse(id, formData);
 
-      navigate("/");
+      navigate("/home");
     } catch (error) {
       console.error("Gagal update course:", error);
     }
@@ -54,10 +54,7 @@ function EditDetailCourse() {
     <>
       <Navbar showMenu={true} />
 
-      <Card
-        title="Tambah Kursus"
-        subtitle="Yuk, tambah kursusmu di videobelajar."
-      >
+      <Card title="Edit Kursus" subtitle="Kamu bisa Edit kursus mu disini">
         <form onSubmit={handleSubmit} className="form">
           <Input
             name="title"
