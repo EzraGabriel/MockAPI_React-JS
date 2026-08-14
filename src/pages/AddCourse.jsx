@@ -16,6 +16,7 @@ function AddCourse() {
     category: "",
     mentor: "",
     job: "",
+    company: "",
     rating: 0,
     totalReview: 0,
     price: 0,
@@ -100,6 +101,13 @@ function AddCourse() {
             label="Pekerjaan"
             name="job"
             value={formData.job}
+            onChange={handleChange}
+          />
+          <Input
+            required
+            label="Perusahaan"
+            name="company"
+            value={formData.company}
             onChange={handleChange}
           />
 
