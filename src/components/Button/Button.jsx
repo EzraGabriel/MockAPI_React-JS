@@ -1,8 +1,8 @@
 import "./Button.css";
-function Button({ weight = " ", ...props }) {
+function Button({ weight = " ", type = "submit", ...props }) {
   const style = "button " + "button-" + props.class + " " + weight;
   return (
-    <button className={style} type="submit" onClick={props.onClick}>
+    <button className={style} type={type} onClick={props.onClick}>
       {props.children}
     </button>
   );

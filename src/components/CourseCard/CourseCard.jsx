@@ -12,6 +12,7 @@ function CourseCard({
   rating,
   totalReview,
   price,
+  ...props
 }) {
   return (
     <article className="course-card">

@@ -6,10 +6,13 @@ import CourseCard from "../components/CourseCard/CourseCard.jsx";
 import Footer from "../components/Footer/Footer.jsx";
 
 import "./Home.css";
+
 import { useState } from "react";
-import { courses } from "../data/courses";
+import { useCourses } from "../hooks/useCourses";
+//import { courses } from "../data/courses";
 
 function Home() {
+  const { courses, loading } = useCourses();
   const categories = [
     "Semua Kelas",
     "Pemasaran",
@@ -19,6 +22,18 @@ function Home() {
   ];
 
   const [activeTab, setActiveTab] = useState(categories[0]);
+
+  const filteredCourse = courses.filter((course) => {
+    if (activeTab === "Semua Kelas") {
+      return true;
+    }
+    return course.category === activeTab;
+  });
+
+  if (loading) {
+    return <p>Loading...</p>;
+  }
+
   return (
     <>
       <Navbar showProfile showMenu />
@@ -53,7 +68,7 @@ function Home() {
           onTabChange={setActiveTab}
         />
         <div className="course-list">
-          {courses.map((course) => (
+          {filteredCourse.map((course) => (
             <CourseCard key={course.id} {...course} />
           ))}
         </div>
